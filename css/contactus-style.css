@@ -1,0 +1,174 @@
+/* Assignement 2 Group 7_PO JUI, FENG */
+
+body {
+    background-color: rgb(242, 238, 234);
+}
+
+#top {
+    margin: 40px 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #18181b;
+    font-family: 'Merriweather';
+}
+
+h2, p {
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: 'Merriweather';
+}
+
+.logoListOption p{
+    font-size: 10pt;
+    font-family: 'Merriweather';
+}
+
+#description {
+    margin: 40px 0;
+}
+
+#signupdiv {
+    background-color: rgb(250, 244, 245);
+    width: 440px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+#signup {
+    font-family: 'Merriweather';
+}
+
+#submit {
+    background-color: #987976;
+    color: white;
+    border-style: solid;
+    border-color: #987976;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin: 0 0 0 24px;
+    cursor: pointer;
+}
+
+#submit a {
+    font-family: 'Merriweather';
+    text-decoration: none;
+}
+
+#submit a:visited {
+    color: white;
+}
+
+.center {
+    text-align: center;
+    padding: 0 320px;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexcontainer div {
+    margin: 30px;
+}
+
+#doyoung,
+#rong,
+#grace,
+#pojui {
+    width: 300px;
+    height: 300px;
+}
+#rong{
+    width: 320px;
+    height: 300px;
+
+}
+hr {
+    margin: 50px;
+}
+
+#partner {
+    margin: 40px 0;
+}
+
+.partnerships {
+    display: grid;
+    grid-template-columns: auto*3;
+    grid-template-rows: auto*3;
+    justify-content: center;
+}
+
+.partner1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.partner2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.partner3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.partner4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.partner5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.partner6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.partner7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.partner8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.partner9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.partnerimg img {
+    width: 150px;
+    height: 150px;
+}
+
+.partnerimg {
+    background-color: rgb(242, 238, 234);
+}
+
+@media screen and (max-width: 850px) {
+    .center {
+        text-align: center;
+        padding: 0px;
+    }
+
+    #signupdiv {
+        width: 80%;
+    }
+
+    .partnerimg img {
+        width: 100%;
+    }
+}

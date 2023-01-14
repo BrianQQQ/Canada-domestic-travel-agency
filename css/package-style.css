@@ -1,0 +1,236 @@
+/* Web Programming Assignment2  */
+/* Grace Ellis */
+
+/* general */
+
+* {
+    padding: 0;
+    margin: 0;
+    min-height: fit-content;
+}
+
+body {
+    background-color: rgb(242, 238, 234);
+    width: 100%;
+}
+
+p {
+    padding: 10px;
+}
+
+ul {
+    vertical-align: 540px;
+}
+
+.companyName ul {
+    vertical-align: 0px;
+    padding-right: 0px;
+}
+
+.companyName li {
+    min-width: 0px;
+    margin: 0px;
+    padding: 5px;
+}
+
+h1 {
+    display: flex;
+}
+
+h2, h3 {
+    padding: 0 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 16px;
+}
+
+/* promotion */
+
+.promotionPackage {
+    padding-top: 50px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slides {
+    top: 60px;
+    width: 1000px;
+    height: 550px;
+    position: absolute;
+    transition: all 1.5s ease-out;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.promoIMG {
+    width: 100%;
+    height: 400px;
+}
+
+.promo1 {
+    background: url('../img/package/Banff&LakeLouise.jpg') no-repeat 100% 90%;
+}
+
+.promo2 {
+    background: url('../img/package/botanic.jpg') no-repeat 30%;
+    background-size: cover;
+}
+
+.promo3 {
+    background: url('../img/package/rockies.jpg') no-repeat 50%;
+    ;
+}
+
+#promotionTitle {
+    padding-top: 250px;
+    padding-left: 30px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+}
+
+.heading {
+    display: flex;
+    flex: wrap;
+    float: right;
+}
+
+.promotionPackage .heading {
+    display: flex;
+    flex: wrap;
+    float: right;
+    margin-top: -30px;
+}
+
+.packageP {
+    display: flex;
+}
+
+/* search */
+
+.package-search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: solid grey 2px;
+}
+
+/* tour package */
+.search-packageTitle {
+    margin-left: 25%;
+    display: list-item;
+    list-style: none;
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.tourPackage {
+    border: none;
+    border-radius: 14px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(161, 151, 123);
+    box-shadow: 5px 5px 5px rgb(161, 151, 123);
+    padding: 15px;
+}
+
+#package-resetButton {
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 16px;
+    background-color: rgb(153, 121, 118);
+    border: none;
+}
+
+#package-resetButton:hover {
+    background-color: rgb(153, 121, 118,0.9);
+    color: white;
+}
+
+#provinceDropDown {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+ @media screen and (max-width:800px) {
+
+    .slides {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .promotionPackage h2 {
+        margin: 0 auto;
+        display: block;
+        max-width: 60%;
+        text-align: center;
+    }
+
+    .slides .packageP {
+        text-align: center;
+        display: block;
+        margin: 25px auto;
+    }
+
+    .promotionPackage .heading {
+        display: flex;
+        padding-top: 30px;
+        padding-right: 250px;
+        padding-left: -100px;
+    }
+
+    .promotionPackage .promoIMG {
+        margin: 0px auto;
+    }
+
+    .slides {
+        max-width: 500px;
+    }
+
+    li {
+        max-width: 700px;
+        list-style: none;
+        min-width: 400px;
+    }
+
+    
+
+    #promotionTitle {
+        font-size: 40px;
+        padding-left: 145px;
+    }
+
+    .package-search {
+        margin: 10px auto;
+        padding-top: 60px;
+    }
+
+    .search-packageTitle {
+        max-width: 700px;
+        min-width: 400px;
+        display: list-item;
+        list-style: none;
+        margin: 10px auto;
+        margin-top: 30px;
+        padding: 10px auto;
+    }
+}

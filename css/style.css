@@ -1,0 +1,778 @@
+/* Assignement 2 Group 7_Doyoung Kim */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nerko+One');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather';
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(242, 238, 234);
+}
+
+/* Header */
+.stickyHeaderNav {
+    top: 0;
+    position:sticky;
+    z-index: 2;
+}
+
+.headerNav {
+    text-align: right;
+    background-color: rgb(223, 214, 207);
+    padding-right: 15px;
+    margin: 0;
+    font-family: 'Merriweather';
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.companyName {
+    position: absolute;
+    top: -5px; 
+    left: 10%;
+}
+
+.companyName span {
+    font-size: 44pt;
+}
+
+#headerLogo, #hiddenLogo {
+    display: inline-block;
+    width: 40px;
+}
+
+#headerLogo, .companyLogoName {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#hiddenLogo, .hiddenLogoName {
+    display: none;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.companyLogoName, .hiddenLogoName {
+    font-family: 'Nerko One';
+}
+
+.buttonLists{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.newButtonLists {
+    transform: scaleY(1);
+}
+
+.buttonLinks {
+    font-size: 10pt;
+    margin: 0px;
+    padding: 15px;
+    border: none;
+    width: 200px;
+    background: rgb(223, 214, 207,0.9);
+    cursor: pointer;
+    color: black;
+}
+
+.buttonLinks:hover {
+    background: rgb(166, 151, 119, 0.9);
+    color: rgb(49, 49, 49);
+}
+
+
+.topMenu {
+    display: inline-block;
+}
+
+.topMenu a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0;
+    color: rgb(49, 49, 49);
+    font-size: 12pt;
+    font-weight:bold;
+}
+
+.topMenu a:hover {
+    background-color: rgb(166, 151, 119);
+    color: rgb(49, 49, 49);
+    margin: 0;
+}
+
+/* Promotion */
+.promotionSlider {
+    text-align: center;
+}
+
+.ourPromotion {
+    position: relative;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Nerko One';
+    color: rgb(244, 244, 244);
+    font-size: 50pt;
+}
+
+.ourPromotionOverlay {   
+    width: 800px;
+    position: absolute;
+    font-family: 'Nerko One';
+    left: 50%;
+    transform: translate(-65%, 0);
+}
+
+.fontcolor1{
+    color:rgb(54, 54, 54);
+}
+
+.image {
+    width: 1200px;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    box-sizing: border-box;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    position: relative;
+    width: 900px;  
+}
+
+.controller {
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: -100px;
+    bottom: 25px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.prev, .next, .stop {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+    transition: 1s ease;
+}
+
+.stop {
+    font-size: 16pt;
+}
+
+.captionNumber {
+    z-index: 1;
+    color: #f2f2f2;
+    font-size: 16pt;
+    padding: 10px 20px;
+    position: absolute;
+    top: 595px;
+    left: 50%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
+}
+
+/* Recommdation */
+.recommdation {
+    position: relative;
+    margin-top: 50px;
+}
+
+.recommedTitle {
+    padding: 50px;
+    margin-left: 5%;
+    font-family: 'Merriweather';
+}
+
+.circle1, .circle2, .circle3  {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: 700px;
+    left: 5vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle2, .circle3 {
+    bottom: 880px;
+}
+
+.newCircle {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(45,80,45);
+}
+
+.vertical1, .vertical2 {
+    position: absolute;
+    height: 1000px;
+    left: 5px;
+    border-left: solid 1px #bbb;
+    z-index: 1;
+}
+
+.links {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link {
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    color: rgb(49, 49, 49);
+    font-family: 'Merriweather';
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: black 1px solid;
+    border-radius: 20px;
+}
+
+.link:hover {
+    background-color: rgb(153, 121, 118);
+    border-color: rgb(153, 121, 118);
+    color: white;
+}
+
+.seperateForPC {
+    color: #bbb;
+    font-size: 32px;
+}
+
+.linksForMobile{
+    display: none;
+}
+
+.mainReommendGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+     "largeGrid largeGrid barGrid barGrid"
+     "largeGrid largeGrid smallGrid1 smallGrid2"
+    ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.largeGrid, .barGrid, .smallGrid1, .smallGrid2 {
+    margin: 20px;
+    transition: all 0.5s linear;
+}
+
+.largeGrid {
+    grid-area: largeGrid;
+    position: relative;
+}
+
+.barGrid {
+    grid-area: barGrid;
+    position: relative;
+}
+
+.smallGrid1 {
+    grid-area: smallGrid1;
+    position: relative;
+}
+
+.smallGrid2 {
+    grid-area: smallGrid2;
+    position: relative;
+}
+
+.gridContent, .lgContent {
+    color: white;
+    position: relative;
+    top: 180px;
+    background-color: rgba(153,121,118,0.6);
+    padding: 10px;
+    text-align: center;
+}
+
+.color1 {
+    background-color: rgba(166,151,119,0.6);
+}
+
+.color2 {
+    background-color: rgba(236,214,217,0.6);
+    color: black;
+}
+
+.color3 {
+    background-color: rgba(166,151,119,0.6);
+}
+
+.gridLink {
+    position:absolute;
+    width: 100%;   
+    height: 100%;
+    z-index: 1;   
+}
+
+.lgContent {
+    top: 480px;
+}
+
+.visuallyHidden {
+    opacity: 0;
+}
+
+/* Recommdation Grids*/
+.vanRecommendTour1 {
+    background: url('../img/index/seaplane.jpg');
+}
+
+.vanRecommendTour2 {
+    background: url('../img/index/capilano.jpg');
+}
+.vanRecommendTour3 {
+    background: url('../img/index/gondola.jpg');
+    background-position: 50%;
+}
+.vanRecommendTour4 {
+    background: url('../img/index/whalewatching.jpg');
+}
+
+.vanRecommendTour1, .vanRecommendTour2, .vanRecommendTour3, .vanRecommendTour4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calRecommendTour1 {
+    background: url('../img/index/zoo.jpg');
+}
+.calRecommendTour2 {
+    background: url('../img/index/calgarypark.jpg');
+}
+.calRecommendTour3 {
+    background: url('../img/index/calgarytower.jpg');
+}   
+.calRecommendTour4 {
+    background: url('../img/index/calgarymusic.jpg');
+}
+
+.calRecommendTour1, .calRecommendTour2, .calRecommendTour3, .calRecommendTour4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.torRecommendTour1 {
+    background: url('../img/index/niagara.jpg');
+}
+.torRecommendTour2 {
+    background: url('../img/index/illusion.png');
+}
+.torRecommendTour3 {
+    background: url('../img/index/wine.jpg');
+}
+.torRecommendTour4  {
+    background: url('../img/index/helicopter.jpg');
+}
+
+.torRecommendTour1, .torRecommendTour2, .torRecommendTour3, .torRecommendTour4 { 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.monRecommendTour1 {
+    background: url('../img/index/oldmontreal.jpg');
+}
+.monRecommendTour2 {
+    background: url('../img/index/mtl_underground.jpg');
+}
+.monRecommendTour3 {
+    background: url('../img/index/monttremblant.jpg');
+}
+.monRecommendTour4 {
+    background: url('../img/index/lavenders.jpg');
+}
+
+.monRecommendTour1, .monRecommendTour2, .monRecommendTour3, .monRecommendTour4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Themem */
+.travelTheme1 {
+    position: relative;
+}
+
+.theme1Title {
+    padding: 50px;
+}
+
+.mainTheme1Grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-areas: 
+     "themeGrid1 themeGrid2 themeGrid3"
+     "themeGrid4 themeGrid5 themeGrid6"
+    ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.themePara {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.themeLink {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.themeGrid1, .themeGrid2, .themeGrid3, .themeGrid4, .themeGrid5, .themeGrid6 {
+    position: relative;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.themeGrid1 {
+    grid-area: themeGrid1;
+}
+
+.themeGrid2 {
+    grid-area: themeGrid2;
+}
+
+.themeGrid3 {
+    grid-area: themeGrid3;
+}
+
+.themeGrid4 {
+    grid-area: themeGrid4;
+}
+
+.themeGrid5 {
+    grid-area: themeGrid5;
+}
+
+.themeGrid6 {
+    grid-area: themeGrid6;
+}
+
+.theme1Img1 {
+    background: url('../img/index/foodtour.jpg');
+}
+
+.theme1Img2 {
+    background: url('../img/index/canadianmuseum.jpg');
+}
+
+.theme1Img3 {
+    background: url('../img/index/Petrolalley.jpg');
+}
+
+.theme1Img4 {
+    background: url('../img/index/clue.jpg');
+}
+
+.theme1Img5 {
+    background: url('../img/index/botanic.jpg');
+}
+
+.theme1Img6 {
+    background: url('../img/index/marine.jpg');
+}
+
+.theme1Img1, .theme1Img2, .theme1Img3, .theme1Img4, .theme1Img5, .theme1Img6  {
+    height: 300px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+}
+
+.theme2Img1 {
+    background: url('../img/index/calgary1.jpg');
+}
+
+.theme2Img2 {
+    background: url('../img/index/wintertour.jpg');
+}
+
+.theme2Img3 {
+    background: url('../img/index/winecountry.jpg');
+}
+
+.theme2Img4 {
+    background: url('../img/index/brewery.jpg');
+}
+
+.theme2Img5 {
+    background: url('../img/index/fairmont.jpg');
+}
+
+.theme2Img6 {
+    background: url('../img/index/bus.jpg');
+}
+
+.theme2Img1, .theme2Img2, .theme2Img3, .theme2Img4, .theme2Img5, .theme2Img6 {
+    height: 300px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5%;
+}
+
+/* footer */
+.footerNav {
+    background-color: rgb(223, 214, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.bottomLine {
+    border: none;
+    height: 1px;
+    background-color: rgb(185,187,189);
+}
+
+.indexContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footerLogo {
+    height: 80px;
+    padding-right: 20px;
+}
+
+.siteIndex {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+}
+
+.siteIndex p{
+    color: rgb(100, 104, 106);
+    font-family: arial;
+    font-size: 11pt;
+    margin-top: 15px;
+}
+
+.signPage {
+    color: rgb(100, 104, 106);
+    font-size: 9pt;
+}
+
+.goToTop {
+    display: none;
+    z-index: 3;
+}
+
+.newGoToTop {
+    display: block;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.newGoToTop img {
+    position: fixed;
+    width: 50px;
+    bottom: 80px;
+    right: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(3px 3px 4px rgb(0, 0, 0,0.3));
+    z-index: 3;
+}
+
+@media screen and (max-width:1400px) {
+
+    .circle1, .circle2, .circle3 {
+        display: none;
+    }
+    
+    .newCircle {
+        display: none;
+    }
+    
+    .vertical1, .vertical2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .image {   
+        width: 95vw;
+        height: 50vw;
+    }
+
+    .ourPromotionOverlay{
+        width: 85vw;
+        height: 50vw;
+    }
+
+    .ourPromotionOverlay {
+        transform: translate(-43%, 0);
+    }
+
+    .captionNumber {
+        top: 49vw;
+    }
+
+    .buttons {
+        width: 90vw;
+    }    
+
+    .controller {
+        right: 0px
+    }
+
+   #hiddenLogo, .hiddenLogoName {
+        display: inline-block;
+    }
+    
+    #headerLogo, .companyLogoName {
+        display: none;
+    }    
+
+    .companyName {
+        left: 50%;
+        transform: translate(-50%, 0);
+    } 
+
+    .ourPromotionOverlay, .image {   
+        font-size: 5vw;
+    }
+
+    .topMenu {
+        height:55px;
+    }
+
+    .topMenu a{
+        display: none;
+    }    
+
+    .mainReommendGrid {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 300px);
+        grid-template-areas: 
+         "barGrid barGrid"
+         "smallGrid1 smallGrid2"
+         "largeGrid largeGrid"
+        ;
+    }
+
+    .lgContent {
+        top: 200px;
+    }
+
+    .mainTheme1Grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-areas: 
+         "themeGrid1 themeGrid2"
+         "themeGrid3 themeGrid4"
+         "themeGrid5 themeGrid6"
+        ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .link {
+        margin-bottom: 15px;
+    }
+
+    .seperateForPC {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .captionNumber {
+        opacity: 0;
+    }
+
+    .mainReommendGrid {
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas: 
+         "barGrid"
+         "smallGrid1"
+         "smallGrid2"
+         "largeGrid"
+        ;
+    }
+
+    .mainTheme1Grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-areas: 
+         "themeGrid1"
+         "themeGrid2"
+         "themeGrid3"
+         "themeGrid4"
+         "themeGrid5"
+         "themeGrid6"
+        ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newGoToTop img {
+        width: 35px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+
+
+

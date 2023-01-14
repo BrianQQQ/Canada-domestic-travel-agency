@@ -1,0 +1,197 @@
+/* Assignement 2 Group 7_PO JUI, FENG */
+
+body {
+    font-family: 'Merriweather';
+    background-color:  rgb(242, 238, 234);
+}
+
+.top-search {
+    display: flex;
+    height: 650px;
+    background-image: url("../img/background/DSC08343-scaled.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-search h2 {
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+.search-form {
+    margin: 10px 0;
+}
+
+.flexsearchbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchbar {
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    padding: 4px 12px;
+    vertical-align: top;
+}
+
+#searchbutton {
+    width: 80px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #987976;
+    font-family: 'Merriweather';
+    font-size: 16px;
+    color: white;
+    border-style: solid;
+    border-color: #987976;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#searchbutton:hover {
+    background-color: #FFEBAD;
+    color: black;
+    border-color: #FFEBAD;
+}
+
+form {
+    padding: 5px 0px 0px 0px;
+}
+
+#myBtnContainer {
+    text-align: center;
+    margin: 10px;
+}
+
+#myBtnContainer button {
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    background-color:#987976;
+    font-family: 'Merriweather';
+    font-size: 16px;
+    border-style:none;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#myBtnContainer button:hover{
+    background-color: #FFEBAD;
+    color: black;
+}
+
+table {
+    width: 850px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(250, 244, 245);
+}
+
+.description {
+    height: 200px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.packagepic{
+    width: 400px;
+    height: 300px;
+}
+
+.night {
+    width: 120px;
+    text-align: right;
+}
+
+.price {
+    width: 120px;
+    text-align: right;
+}
+
+.location {
+    vertical-align: top;
+    padding-left: 10px;
+    text-align: left
+}
+
+.tourname {
+    font-size: 30px;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left
+}
+
+.flexcontainer {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexcontainer div {
+    vertical-align: top;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px){
+
+    .top-search h2 {
+        width: 80%;
+    }
+
+    #searchbar {
+        width: 100%;
+    }
+
+    #searchbutton {
+        width: 50%;
+    }
+
+    .packages img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .packages table {
+        width: 80vw;
+        height: auto;
+    }
+
+    .flexsearchbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tourname {
+        font-size: 4vw;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .location {
+        font-size: 2vw;
+        vertical-align:middle;
+    }
+
+    .night {
+        font-size: 2vw;
+    }
+
+    .price {
+        font-size: 2vw;
+    }
+}

@@ -1,0 +1,28 @@
+/* Assignement 2 Group 7_Doyoung Kim */
+body {
+    background-color: rgba(244,244,244,1);
+}
+
+.welcomeDiv {
+    margin: auto; 
+    width: 50%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.goToLogIn {
+    cursor: pointer;
+    font-size: 16pt;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 20px;
+    background-color: rgb(220, 214, 208);
+    border: 0px;
+}
+
+.goToLogIn:hover {
+    background-color: rgba(161,151,123);
+}
